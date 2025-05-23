@@ -1,3 +1,17 @@
+
+"""
+Script to scrape details for 6 projects from Odisha RERA project list.
+Extracts: Rera Regd. No, Project Name, Promoter Name, Address of the Promoter, GST No.
+
+Pip Install Requirements:
+    pip install selenium
+    pip install webdriver-manager  # Optional, for automatic ChromeDriver management
+
+Additional Dependency:
+    - ChromeDriver: Must match Chrome version (e.g., 137.0.7151.41).
+      - Manual: Download from https://chromedriver.chromium.org/ and place at C:\Users\gurra\chromedriver.exe
+      - Automatic: Use webdriver-manager to handle ChromeDriver.
+"""
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
